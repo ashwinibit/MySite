@@ -52,6 +52,7 @@ section {
 }
 
 .section {
+  display: none;
   transform: translateY(-100%) scale(0);
   transition: all 0.4s ease-in-out;
   background-color: var(--color-primary);
@@ -60,26 +61,44 @@ section {
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: #0032e7;
 }
 
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: #aedfc2;
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: rgb(221, 125, 125);
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: rgb(20, 142, 163);
 }
 
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: rgb(218, 31, 31);
+}
+
+.active {
+  display: block;
+  animation: scaleAnim 1s ease-in-out;
+}
+@keyframes scaleAnim {
+  0% {
+    transform: translateY(-100%) scaleY(0);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
 }
 
 .controlls {
@@ -93,6 +112,13 @@ section {
   justify-content: center;
   transform: translateY(-50%);
 }
+.controlls .active-btn {
+  background-color: var(--color-secondary) !important;
+  transition: all 0.4s ease-in-out;
+}
+.controlls .active-btn i {
+  color: var(--color-white) !important;
+}
 .controlls .control {
   padding: 1rem;
   cursor: pointer;
@@ -105,4 +131,9 @@ section {
   align-items: center;
   margin: 0.7rem;
   box-shadow: var(--box-shadow-1);
+}
+.controlls .control i {
+  font-size: 1.2rem;
+  color: var(--color-grey-2);
+  pointer-events: none;
 }/*# sourceMappingURL=styles.css.map */
