@@ -393,6 +393,20 @@ section{
 }
 
 
+// Portfolios
+
+.port-text{
+    padding: 2rem 0;
+    text-align: center;
+}
+.portfolio{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 3rem;
+}
+
+
 // Independent compomnent
 .btn-container{
     display: flex;
