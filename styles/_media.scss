@@ -121,3 +121,15 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px){
+    .header-content .right-header{
+        padding-right: 10rem;
+    }
+    .portfolios{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
