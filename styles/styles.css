@@ -737,6 +737,29 @@ section {
     margin: 0 auto;
     width: 90%;
   }
+  .about-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-container .right-about {
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 2.5rem;
+  }
+  .about-container .right-about .left-about {
+    padding-right: 0;
+  }
+  .about-container .right-about .left-about p {
+    padding-left: 0;
+  }
+  .timeline {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 6rem !important;
+  }
+  .about-stats .progress-bars {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section {
+    padding: 2rem 2.5rem !important;
+  }
   .controlls {
     top: auto;
     bottom: 0;
